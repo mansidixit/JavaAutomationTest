@@ -15,7 +15,7 @@ Feature: Find the NSW service centre
     Examples:
     |suburbAndPostcode|serviceCentreName|
     |Sydney 2000|Marrickville Service Centre|
-    |Sydney Domestic Airport 2020|Rockdale Service Centre|
+   # |Sydney Domestic Airport 2020|Rockdale Service Centre|
     
    
 

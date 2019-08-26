@@ -9,10 +9,10 @@ import cucumber.api.java.en.Given;
 
 public class HomeSteps{
 	
-	private HomePage homePage;
+	private HomePage homePage ;
 	
 	
-	public HomeSteps() {
+	public HomeSteps(){
 		homePage = new HomePage();
 	}
 

@@ -33,7 +33,6 @@ public class HomePage extends MenuPage {
 	}
 
 	public boolean isLoaded() {
-		
 		return homePageLocator.isDisplayed();
 	}
 	

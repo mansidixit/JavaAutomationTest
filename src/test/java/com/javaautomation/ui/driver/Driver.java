@@ -7,7 +7,7 @@ public class Driver {
 	public static WebDriver driver;
 	private static final String URL_KEY = "https://www.service.nsw.gov.au/"; // you can get this from an external file
 	private static final String BROWSER_NAME  = "CHROME";  //You can get this from an external file
-	private static final String CHROME_DRIVER_PATH  = "src/test/resources/com/javaautomation/ui/drivers/chromedriver.exe"; 
+	private static final String CHROME_DRIVER_PATH  = "src/test/resources/drivers/chromedriver.exe"; 
 
 	public static void initializeDriver() {
 		switch (BROWSER_NAME) {
@@ -27,6 +27,8 @@ public class Driver {
 		    driver.manage().deleteAllCookies();
 			driver.get(URL_KEY);
   			driver.manage().window().maximize();
+  			
+  			System.out.println(" newDriver");
 	}
 
 	public static WebDriver getTestDriver() {
@@ -34,8 +36,10 @@ public class Driver {
 	}
 
 	public static void shutDown() {
-		driver.quit();
-		
+		if(null != driver) {
+			System.out.println(" quit");
+			driver.quit();
+		}
 	}
 
 }

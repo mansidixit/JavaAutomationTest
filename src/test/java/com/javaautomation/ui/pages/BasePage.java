@@ -29,8 +29,7 @@ public abstract class BasePage {
   		
  	}
   	
-   	
- 	public BasePage (WebDriver driver, int timeout, int pollingTime) {
+   public BasePage (WebDriver driver, int timeout, int pollingTime) {
  		this(timeout);
  		this.pollingTime=pollingTime;
  	}
@@ -52,6 +51,11 @@ public abstract class BasePage {
 			}
 		}
 		return null;
+	}
+	
+	public void shutDown() {
+		if(Driver.getTestDriver()!= null)
+			Driver.shutDown();
 	}
 
 

@@ -1,6 +1,6 @@
 #Author: mansi.4288@gmail.com
 
-@apiTesting @runall
+@apiTesting
 Feature: Weather Service API Feature
 
  
